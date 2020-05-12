@@ -1,0 +1,21 @@
+cron:
+- description: hourly tasks
+  url: /tasks/hourly
+  schedule: every 1 hours
+- description: rss feeds import for weekday shows
+  url: /tasks/weekday_shows
+  schedule: every tue,wed,thu,fri 8:00
+  timezone: America/New_York
+- description: rss feeds import for weekday shows
+  url: /tasks/weekday_shows
+  schedule: every tue,wed,thu,fri 8:30
+  timezone: America/New_York
+- description: semidaily tasks
+  url: /tasks/semidaily
+  schedule: every 12 hours
+- description: quardaily tasks
+  url: /tasks/quardaily
+  schedule: every 12 hours
+- description: daily tasks
+  url: /tasks/daily
+  schedule: every 24 hours
